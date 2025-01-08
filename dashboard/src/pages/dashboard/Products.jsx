@@ -260,7 +260,7 @@ const Products = () => {
                     src={
                       previewImage.startsWith("data")
                         ? previewImage
-                        : `http://localhost:9000/images/${previewImage}`
+                        : `https://backend-fuom.onrender.com/images/${previewImage}`
                     }
                     alt="Preview"
                     className="w-full h-48 object-cover mb-4"
