@@ -3,7 +3,7 @@ import axios from "axios";
 const instance = axios.create({
   // baseURL: "http://localhost:9000/",
   // baseURL: "https://mern-backend-zeta.vercel.app/",
-  baseURL: "https://mern-backend-ac62.onrender.com/",
+  baseURL: "https://backend-fuom.onrender.com/",
   headers: {
     "Content-Type": "application/json",
   },
