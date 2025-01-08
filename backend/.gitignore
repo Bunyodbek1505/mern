@@ -1,0 +1,5 @@
+# Node modules papkasini chetlab o'tish
+node_modules
+
+# Environment faylni chetlab o'tish
+.env
