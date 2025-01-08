@@ -128,7 +128,7 @@ const Categories = () => {
                 className="flex items-center justify-between bg-gray-100 p-4 rounded-md shadow-sm"
               >
                 <div>
-                  <img src={`http://localhost:9000/images/${c.image}`} alt="img" />
+                  {/* <img src={`http://localhost:9000/images/${c.image}`} alt="img" /> */}
                   <h2 className="text-lg font-medium text-gray-800">{c.name}</h2>
                 </div>
                 <div className="flex gap-2">

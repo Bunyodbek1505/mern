@@ -1,6 +1,14 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const isAuthenticated = localStorage.getItem('auth');
+
+  const handleLogout = () => {
+    localStorage.removeItem('auth'); // Remove authentication data
+    navigate('/login'); // Redirect to login page
+  };
+
   const menuItems = [
     { name: 'Dashboard', icon: '🏠', path: '/' },
     { name: 'Products', icon: '🛒', path: '/products' },
@@ -26,6 +34,17 @@ const Sidebar = () => {
             </NavLink>
           </li>
         ))}
+
+        {isAuthenticated && (
+          <li>
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-3 p-3 rounded-lg text-gray-700 hover:bg-gray-100 w-full"
+            >
+              🚪 Logout
+            </button>
+          </li>
+        )}
       </ul>
     </div>
   );

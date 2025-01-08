@@ -134,7 +134,8 @@ const filterProducts = async (req, res) => {
 
     const filter = {};
 
-    if (category) filter.category = category;
+    // if (category) filter.category = category;
+    if (category) filter.category = { $in: category.split(",") };
     if (color) filter.color = color;
 
     if (maxPrice || minPrice) {
