@@ -16,7 +16,7 @@ const corsOptions = {
     "http://localhost:5174",
     "https://mern-dashboard-alpha.vercel.app",
     "https://mern-homepage.vercel.app",
-    "https://mern-mu-one.vercel.app"
+    "https://mern-ten-theta.vercel.app"
   ], // Allowing frontend
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], // Allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
