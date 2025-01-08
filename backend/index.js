@@ -11,7 +11,12 @@ const authMiddleware = require("./middleware/authMiddleware");
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:5174"], // Allowing frontend
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://mern-dashboard-alpha.vercel.app",
+    "https://mern-homepage.vercel.app",
+  ], // Allowing frontend
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], // Allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
 };
