@@ -137,7 +137,7 @@ const Products = () => {
             >
               <img
                 className="w-full h-48 object-cover"
-                src={`https://backend-fuom.onrender.com/${prd.image}`}
+                src={`https://backend-fuom.onrender.com/images/${prd.image}`}
                 alt={prd.name}
               />
               <div className="p-4">

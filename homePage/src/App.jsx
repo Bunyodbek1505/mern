@@ -151,7 +151,7 @@ function App() {
               >
                 <img
                   className="w-full h-48 object-cover"
-                  src={`https://backend-fuom.onrender.com/${product.image}`}
+                  src={`https://backend-fuom.onrender.com/images/${product.image}`}
                   alt={product.name}
                 />
                 <div className="p-4">
